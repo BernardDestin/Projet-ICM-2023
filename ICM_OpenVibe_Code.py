@@ -1,25 +1,24 @@
+"""
+ICM_OpenVibe_Code.py
+Réalisé par Gatien AUBRY
+Tous droits réservés
+"""
 import numpy as np
 from pandas import read_csv
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
-from sklearn.metrics import confusion_matrix
-from sklearn.metrics import accuracy_score
-from sklearn.svm import SVC
-import joblib
 import warnings
-
 from sklearn.model_selection import cross_val_score
 from sklearn.model_selection import StratifiedKFold
-
 from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 from sklearn.naive_bayes import GaussianNB
-from sklearn.svm import SVC
 
 class MyOVBox(OVBox):
 	def __init__(self):
+		"""Création de la classe de la Box OpenVibe"""
 		OVBox.__init__(self)
 		self.signalHeader = None
 		self.models = []
@@ -31,6 +30,7 @@ class MyOVBox(OVBox):
 		self.b = 0
 		self.c = 0
 		self.d = 0
+		#Désactivation des warnings de version futures
 		warnings.simplefilter(action='ignore', category=FutureWarning)
 
 		self.signalHeader = None
