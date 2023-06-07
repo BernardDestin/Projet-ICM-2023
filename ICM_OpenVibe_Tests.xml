@@ -219,14 +219,14 @@
 					<TypeIdentifier>(0x007deef9, 0x2f3e95c6)</TypeIdentifier>
 					<Name>Clock frequency (Hz)</Name>
 					<DefaultValue>60</DefaultValue>
-					<Value>10</Value>
+					<Value>25</Value>
 					<Modifiability>false</Modifiability>
 				</Setting>
 				<Setting>
 					<TypeIdentifier>(0xb0d0db45, 0x49cbc34a)</TypeIdentifier>
 					<Name>Script</Name>
 					<DefaultValue></DefaultValue>
-					<Value>C:/Applications/ICM_OpenVibe_Code.py</Value>
+					<Value>C:/Applications/_GitHub_Files/Projet-ICM-2023/ICM_OpenVibe_Code.py</Value>
 					<Modifiability>false</Modifiability>
 				</Setting>
 			</Settings>
